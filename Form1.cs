@@ -15,5 +15,10 @@ namespace Git_Ex1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Saludos desde ¡Hola Mundo!");
+        }
     }
 }
