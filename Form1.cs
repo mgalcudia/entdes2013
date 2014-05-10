@@ -20,5 +20,22 @@ namespace Git_Ex1
         {
             MessageBox.Show("Saludos desde ¡Hola Mundo!");
         }
+
+
+         private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            linkLabel1.Text = "Enlace a internet";
+            linkLabel1.Links.Add(0, 0, "https://www.google.es");
+
+
+
+
+
     }
 }
