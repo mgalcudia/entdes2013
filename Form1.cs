@@ -22,7 +22,7 @@ namespace Git_Ex1
         }
 
 
-         private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
 
@@ -37,5 +37,13 @@ namespace Git_Ex1
 
 
 
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
+
+        
 }
